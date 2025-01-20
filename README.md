@@ -10,7 +10,7 @@ El objetivo del juego es hundir todos los barcos del oponente antes de quedarte 
 - **Tablero personalizable:** Define el tamaño del tablero.
 - **Sistema de vidas:** Los jugadores pierden una vida por cada disparo que falle.
 - **Colocación de barcos aleatoria:** La disposición de los barcos es distinta en cada partida.
-- **Modo un jugador:** Enfréntate a la IA del juego.
+- **Modo un jugador:** Enfréntate al ordenador.
 - **Retroalimentación inmediata:** El juego indica si has dado en el blanco, hundido un barco o disparado al agua.
 
 ## Requisitos
@@ -33,12 +33,12 @@ python main.py
 
 ## Cómo Jugar
 Ejecuta el programa y sigue las instrucciones en pantalla.
-Introduce las coordenadas del disparo en el formato correcto (por ejemplo: A5).
+Introduce las coordenadas del disparo en el formato correcto (por ejemplo: 3,5).
 Intenta hundir todos los barcos antes de que se terminen tus vidas.
 
 1. Reglas
 Cada disparo al agua reduce tu número de vidas.
-Hundir un barco otorga puntos, pero no recupera vidas.
+Hundir un barco no recupera vidas.
 El juego termina cuando:
 Hundes todos los barcos (¡Victoria! 🎉).
 Pierdes todas tus vidas (¡Derrota! 😢).
@@ -48,14 +48,12 @@ plaintext
 Copiar
 Editar
 hundir-la-flota/
-├── main.py         # Script principal del juego
-├── tablero.py      # Lógica del tablero y gestión de barcos
-├── jugador.py      # Gestión de los turnos y lógica del jugador
-├── ia.py           # Inteligencia artificial del oponente
-└── README.md       # Documentación del proyecto
+main.py         # Script principal del juego
+utils.py        # Juego
+README.md       # Documentación del proyecto
 
 3. Personalización
-Puedes modificar el tamaño del tablero, el número de barcos y las vidas iniciales desde el archivo main.py. Busca las variables configurables al inicio del script:
+Puedes modificar el tamaño del tablero, el número de barcos y las vidas iniciales desde el archivo utils.py. Busca las variables configurables al inicio del script:
 
 python
 Copiar
